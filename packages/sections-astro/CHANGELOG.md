@@ -1,5 +1,13 @@
 # @cogisoft/ui-astro
 
+## 0.1.7
+
+### Patch Changes
+
+- fd714dc: patch trigger
+- Updated dependencies [fd714dc]
+  - @cogisoft/ui-svelte-daisy@0.1.7
+
 ## 0.1.6
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @cogisoft/ui-svelte-daisy
 
+## 0.1.6
+
+### Patch Changes
+
+- 4507548: trigger patch
+
 ## 0.1.5
 
 ### Patch Changes

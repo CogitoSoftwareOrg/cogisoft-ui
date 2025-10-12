@@ -44,7 +44,7 @@ jobs:
       - name: 🚀 Create Release PR or Publish
         uses: changesets/action@v1
         with:
-          publish: pnpm -r --if-present build && pnpm changeset publish
+          publish: pnpm run ci:publish
           commit: "chore(release): version packages"
           title: "chore(release): version packages"
           createGithubReleases: true

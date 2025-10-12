@@ -10,7 +10,9 @@
     "lint": "pnpm -r lint",
     "version:changes": "changeset version",
     "publish:changes": "changeset publish",
-    "release": "pnpm version:changes && pnpm -r build && pnpm publish:changes"
+    "release": "pnpm version:changes && pnpm -r build && pnpm publish:changes",
+    "ci:build": "pnpm -r --if-present build",
+    "ci:publish": "pnpm run -w ci:build && pnpm changeset publish"
   },
   "keywords": [],
   "author": "",

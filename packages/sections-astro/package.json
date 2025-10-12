@@ -8,7 +8,7 @@
     "url": "https://github.com/CogitoSoftwareOrg/cogisoft-ui.git"
   },
   "name": "@cogisoft/ui-astro",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "files": [
     "src",

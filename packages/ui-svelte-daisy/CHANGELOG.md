@@ -1,5 +1,11 @@
 # @cogisoft/ui-svelte-daisy
 
+## 0.1.2
+
+### Patch Changes
+
+- 3006d75: version upd
+
 ## 0.1.1
 
 ### Patch Changes

@@ -26,14 +26,29 @@ jobs:
           node-version: 20
           cache: pnpm
           registry-url: https://registry.npmjs.org
+          always-auth: true
 
       - name: 📦 Install
         run: pnpm -w install
 
+      - name: 🧑‍💻 npm whoami
+        run: |
+          npm config set //registry.npmjs.org/:_authToken=${NPM_TOKEN}
+          npm whoami
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # опционально: вывести воркспейсы (для дебага путей)
+      - name: 📜 List workspaces
+        run: pnpm -w list -r --depth -1 || true
+
       - name: 🚀 Create Release PR or Publish
         uses: changesets/action@v1
         with:
-          publish: pnpm -r --filter "./packages/**" build && pnpm changeset publish
+          # Без фильтров: соберём все воркспейсы, где есть build (не упадёт, если его нет)
+          publish: |
+            pnpm -r --if-present build
+            pnpm changeset publish
           commit: "chore(release): version packages"
           title: "chore(release): version packages"
           createGithubReleases: true

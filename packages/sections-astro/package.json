@@ -17,15 +17,19 @@
   "exports": {
     ".": "./src/index.ts"
   },
+  "dependencies": {
+    "@cogisoft/ui-svelte-daisy": "workspace:^"
+  },
   "peerDependencies": {
-    "@cogisoft/ui-svelte-daisy": "0.x",
     "@astrojs/svelte": "^5.0.0",
-    "astro": "^5.0.0"
+    "astro": "^5.0.0",
+    "lucide-astro": "^0.545.0"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.4",
     "@cogisoft/ui-svelte-daisy": "workspace:*",
+    "@astrojs/check": "^0.9.4",
     "astro": "^5.14.4",
+    "lucide-astro": "^0.545.0",
     "lucide-svelte": "^0.545.0",
     "typescript": "^5.9.3"
   },

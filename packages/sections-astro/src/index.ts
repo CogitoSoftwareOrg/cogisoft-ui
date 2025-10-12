@@ -1,1 +1,10 @@
 export { default as Hero } from "./lib/Hero.astro";
+export { default as CTA } from "./lib/CTA.astro";
+export { default as Features } from "./lib/Features.astro";
+export { default as Pains } from "./lib/Pains.astro";
+export { default as Pricing } from "./lib/Pricing.astro";
+export { default as Testimonials } from "./lib/Testimonials.astro";
+export { default as HowItWorks } from "./lib/HowItWorks.astro";
+export { default as DynamicIcon } from "./lib/DynamicIcon.astro";
+export { default as FAQ } from "./lib/FAQ.astro";
+export { default as Products } from "./lib/Products.astro";

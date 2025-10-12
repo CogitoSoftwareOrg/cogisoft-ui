@@ -111,16 +111,19 @@ importers:
       '@astrojs/svelte':
         specifier: ^5.0.0
         version: 5.7.3(astro@5.14.4(@types/node@22.18.9)(jiti@2.6.1)(lightningcss@1.30.1)(rollup@4.52.4)(typescript@5.9.3)(yaml@2.8.1))(svelte@5.39.11)(typescript@5.9.3)(vite@7.1.9(@types/node@22.18.9)(jiti@2.6.1)(lightningcss@1.30.1)(yaml@2.8.1))
+      '@cogisoft/ui-svelte-daisy':
+        specifier: workspace:^
+        version: link:../ui-svelte-daisy
     devDependencies:
       '@astrojs/check':
         specifier: ^0.9.4
         version: 0.9.4(prettier@3.6.2)(typescript@5.9.3)
-      '@cogisoft/ui-svelte-daisy':
-        specifier: workspace:*
-        version: link:../ui-svelte-daisy
       astro:
         specifier: ^5.14.4
         version: 5.14.4(@types/node@22.18.9)(jiti@2.6.1)(lightningcss@1.30.1)(rollup@4.52.4)(typescript@5.9.3)(yaml@2.8.1)
+      lucide-astro:
+        specifier: ^0.545.0
+        version: 0.545.0(astro@5.14.4(@types/node@22.18.9)(jiti@2.6.1)(lightningcss@1.30.1)(rollup@4.52.4)(typescript@5.9.3)(yaml@2.8.1))
       lucide-svelte:
         specifier: ^0.545.0
         version: 0.545.0(svelte@5.39.11)
@@ -2408,6 +2411,11 @@ packages:
 
   lru-cache@10.4.3:
     resolution: {integrity: sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ==}
+
+  lucide-astro@0.545.0:
+    resolution: {integrity: sha512-KBSQTlW4e+tT6DvWEWcqxWa2WubWdqhLG7/WQgnAawQ29ZAEUfTqo2At9IW9xlrG1k8qrVwzeGQfeumiMsgI6Q==}
+    peerDependencies:
+      astro: '>=2.7.1'
 
   lucide-svelte@0.545.0:
     resolution: {integrity: sha512-lVza6hIAf1abADTU1ThyNp+M3bQZtzTGQ9EQZ2xo3n9ftkd4QcWbDB2ekP2MqRLTJpeLXX5gaFEgFZtbWCnyqg==}
@@ -6302,6 +6310,10 @@ snapshots:
   loupe@3.2.1: {}
 
   lru-cache@10.4.3: {}
+
+  lucide-astro@0.545.0(astro@5.14.4(@types/node@22.18.9)(jiti@2.6.1)(lightningcss@1.30.1)(rollup@4.52.4)(typescript@5.9.3)(yaml@2.8.1)):
+    dependencies:
+      astro: 5.14.4(@types/node@22.18.9)(jiti@2.6.1)(lightningcss@1.30.1)(rollup@4.52.4)(typescript@5.9.3)(yaml@2.8.1)
 
   lucide-svelte@0.545.0(svelte@5.39.11):
     dependencies:

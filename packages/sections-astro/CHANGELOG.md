@@ -1,5 +1,13 @@
 # @cogisoft/ui-astro
 
+## 0.1.3
+
+### Patch Changes
+
+- bcbee27: version touch
+- Updated dependencies [bcbee27]
+  - @cogisoft/ui-svelte-daisy@0.1.3
+
 ## 0.1.2
 
 ### Patch Changes

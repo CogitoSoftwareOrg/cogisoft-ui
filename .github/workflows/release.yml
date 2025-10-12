@@ -28,7 +28,7 @@ jobs:
           registry-url: https://registry.npmjs.org
           always-auth: true
 
-      - name: 📦 Install
+      - name: 📦 Install (all workspaces)
         run: pnpm -w install
 
       - name: 🧑‍💻 npm whoami
@@ -38,16 +38,13 @@ jobs:
         env:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
-      # опционально: вывести воркспейсы (для дебага путей)
-      - name: 📜 List workspaces
+      - name: 📜 List workspaces (debug)
         run: pnpm -w list -r --depth -1 || true
 
       - name: 🚀 Create Release PR or Publish
         uses: changesets/action@v1
         with:
-          publish: |
-            pnpm -r --if-present build
-            pnpm changeset publish
+          publish: pnpm -r --if-present build && pnpm changeset publish
           commit: "chore(release): version packages"
           title: "chore(release): version packages"
           createGithubReleases: true

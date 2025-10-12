@@ -1,5 +1,13 @@
 # @cogisoft/ui-astro
 
+## 0.1.4
+
+### Patch Changes
+
+- 749a3b5: trigger version
+- Updated dependencies [749a3b5]
+  - @cogisoft/ui-svelte-daisy@0.1.4
+
 ## 0.1.3
 
 ### Patch Changes

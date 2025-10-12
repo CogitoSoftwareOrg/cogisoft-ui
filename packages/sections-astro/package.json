@@ -7,7 +7,7 @@
     "url": "https://github.com/CogitoSoftwareOrg/cogisoft-ui.git"
   },
   "name": "@cogisoft/ui-astro",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "type": "module",
   "private": false,
   "files": [
@@ -18,7 +18,7 @@
     ".": "./src/index.ts"
   },
   "peerDependencies": {
-    "@cogisoft/ui-svelte-daisy": "0.x",
+    "@cogisoft/ui-svelte-daisy": "0.1.0",
     "@astrojs/svelte": "^5.0.0",
     "astro": "^5.0.0"
   },

@@ -1,4 +1,11 @@
 {
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CogitoSoftwareOrg/cogisoft-ui.git"
+  },
   "name": "@cogisoft/ui-astro",
   "version": "0.0.1",
   "type": "module",
@@ -11,13 +18,16 @@
     ".": "./src/index.ts"
   },
   "peerDependencies": {
-    "astro": "^5.0.0",
     "@astrojs/svelte": "^5.0.0",
-    "svelte": "^5.0.0",
-    "@cogisoft/ui-svelte": "^0.1.0"
+    "@cogisoft/ui-svelte-daisy": "^0.1.0",
+    "astro": "^5.0.0"
   },
   "devDependencies": {
-    "astro": "^5.14.4"
+    "@astrojs/check": "^0.9.4",
+    "@cogisoft/ui-svelte-daisy": "workspace:*",
+    "astro": "^5.14.4",
+    "lucide-svelte": "^0.545.0",
+    "typescript": "^5.9.3"
   },
   "scripts": {
     "dev": "astro dev",

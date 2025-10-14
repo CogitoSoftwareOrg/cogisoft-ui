@@ -1,5 +1,13 @@
 # @cogisoft/ui-astro
 
+## 0.1.9
+
+### Patch Changes
+
+- 4be723d: Lucide optimization
+- Updated dependencies [4be723d]
+  - @cogisoft/ui-svelte-daisy@0.1.9
+
 ## 0.1.8
 
 ### Patch Changes

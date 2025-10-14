@@ -1,5 +1,11 @@
 # @cogisoft/ui-svelte-daisy
 
+## 0.1.9
+
+### Patch Changes
+
+- 4be723d: Lucide optimization
+
 ## 0.1.8
 
 ### Patch Changes

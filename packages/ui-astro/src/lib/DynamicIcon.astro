@@ -1,0 +1,42 @@
+---
+import type { Icon as IconType } from "@lucide/astro";
+
+import Bot from "@lucide/astro/icons/bot";
+import SlidersHorizontal from "@lucide/astro/icons/sliders-horizontal";
+import MessageCircle from "@lucide/astro/icons/message-circle";
+import Target from "@lucide/astro/icons/target";
+import FileText from "@lucide/astro/icons/file-text";
+import TrendingUp from "@lucide/astro/icons/trending-up";
+import Bed from "@lucide/astro/icons/bed";
+import BookOpen from "@lucide/astro/icons/book-open";
+// import CircleHelp from "@lucide/astro/icons/circle-help";
+// import ChartNoAxesCombined from "@lucide/astro/icons/chart-no-axes-combined";
+// import CircleCheck from "@lucide/astro/icons/circle-check";
+
+interface Props {
+  name: string;
+  size?: number;
+  class?: string;
+}
+
+const { name, size = 24, class: className = "" } = Astro.props;
+
+// Map icon names to components
+const iconMap: Record<string, any> = {
+  bot: Bot,
+  "sliders-horizontal": SlidersHorizontal,
+  "message-circle": MessageCircle,
+  target: Target,
+  "file-text": FileText,
+  "trending-up": TrendingUp,
+  bed: Bed,
+  "book-open": BookOpen,
+  // "circle-help": CircleHelp,
+  // "chart-no-axes-combined": ChartNoAxesCombined,
+  // "circle-check": CircleCheck,
+};
+
+const IconComponent = iconMap[name];
+---
+
+{IconComponent && <IconComponent size={size} class={className} />}

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { X } from 'lucide-svelte';
+	import X from 'lucide-svelte/icons/x';
 	import type { ClassValue } from 'svelte/elements';
 
 	import { portal } from './actions/portal.js';
@@ -78,6 +78,7 @@
 		<div class={['modal-box relative', noPadding && 'p-0', className]}>
 			<div class="absolute right-2 top-2">
 				<Button color="neutral" style="ghost" onclick={handleClose} circle>
+					x
 					<X size={24} />
 				</Button>
 			</div>

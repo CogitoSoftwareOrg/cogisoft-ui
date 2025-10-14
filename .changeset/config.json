@@ -7,5 +7,5 @@
   "access": "public",
   "baseBranch": "main",
   "updateInternalDependencies": "patch",
-  "ignore": ["play-sveltekit"]
+  "ignore": ["play-sveltekit", "play-astro"]
 }

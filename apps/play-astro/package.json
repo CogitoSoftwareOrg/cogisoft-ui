@@ -1,0 +1,22 @@
+{
+  "name": "play-astro-fix",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@cogisoft/ui-svelte-daisy": "workspace:*",
+    "@cogisoft/ui-astro": "workspace:*",
+    "@astrojs/svelte": "^7.2.0",
+    "@tailwindcss/vite": "^4.1.14",
+    "astro": "^5.14.4",
+    "daisyui": "^5.2.0",
+    "svelte": "^5.39.12",
+    "tailwindcss": "^4.1.14",
+    "typescript": "^5.9.3"
+  }
+}

@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 interface Step {
   number: number;
   title: string;
@@ -11,9 +13,18 @@ interface Props {
   subtitle?: string;
   steps: Step[];
   theme?: "default" | "dark" | "gradient";
+  imageWidth?: number;
+  imageHeight?: number;
 }
 
-const { title, subtitle, steps, theme = "default" } = Astro.props;
+const {
+  title,
+  subtitle,
+  steps,
+  theme = "default",
+  imageWidth = 800,
+  imageHeight = 600,
+} = Astro.props;
 
 const themeClasses = {
   default: "",
@@ -77,10 +88,14 @@ const themeClasses = {
 
                   {step.image && (
                     <div class="mt-6">
-                      <img
+                      <Image
                         src={step.image}
                         alt={step.title}
+                        width={imageWidth}
+                        height={imageHeight}
                         class="w-full h-80 md:h-96 object-cover rounded-xl shadow-lg border border-base-200 hover:shadow-xl transition-all duration-300 hover:scale-[1.02]"
+                        loading="lazy"
+                        format="webp"
                       />
                     </div>
                   )}

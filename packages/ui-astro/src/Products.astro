@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 interface Module {
   name: string;
   description: string;
@@ -24,6 +26,8 @@ interface Props {
     href?: string;
   };
   theme?: "default" | "dark" | "gradient";
+  imageWidth?: number;
+  imageHeight?: number;
 }
 
 const {
@@ -33,6 +37,8 @@ const {
   modules,
   pantheon,
   theme = "default",
+  imageWidth = 800,
+  imageHeight = 600,
 } = Astro.props;
 
 const themeClasses = {
@@ -72,10 +78,14 @@ const themeClasses = {
             class="group card bg-base-100 border border-base-200 shadow-xl transition-all duration-200 hover:shadow-2xl hover:border-primary/60 hover:-translate-y-1 cursor-pointer no-underline"
           >
             <figure class="px-4 pt-4">
-              <img
+              <Image
                 src={oracle.image}
                 alt={oracle.title}
+                width={imageWidth}
+                height={imageHeight}
                 class="rounded-xl h-84 w-full object-cover object-top mx-auto"
+                loading="lazy"
+                format="webp"
               />
             </figure>
             <div class="card-body items-center text-center">
@@ -125,10 +135,14 @@ const themeClasses = {
 
                     {module.image && (
                       <div class="mt-4">
-                        <img
+                        <Image
                           src={module.image}
                           alt={module.name}
+                          width={imageWidth}
+                          height={imageHeight}
                           class="rounded-xl h-84 w-full object-cover object-top mx-auto"
+                          loading="lazy"
+                          format="webp"
                         />
                       </div>
                     )}
@@ -158,10 +172,14 @@ const themeClasses = {
             class="group card bg-base-100 border border-base-200 shadow-xl transition-all duration-200 hover:shadow-2xl hover:border-secondary/60 hover:-translate-y-1 cursor-pointer no-underline"
           >
             <figure class="px-4 pt-4">
-              <img
+              <Image
                 src={pantheon.image}
                 alt={pantheon.title}
+                width={imageWidth}
+                height={imageHeight}
                 class="rounded-xl h-84 w-full object-cover object-top mx-auto"
+                loading="lazy"
+                format="webp"
               />
             </figure>
             <div class="card-body items-center text-center">

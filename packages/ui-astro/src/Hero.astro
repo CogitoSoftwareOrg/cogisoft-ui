@@ -1,4 +1,6 @@
 ---
+import { Image } from "astro:assets";
+
 import { Button } from "@cogisoft/ui-svelte-daisy";
 
 interface Props {
@@ -13,6 +15,8 @@ interface Props {
 
   position?: "left" | "right";
   center?: boolean;
+  imageWidth?: number;
+  imageHeight?: number;
 }
 
 const {
@@ -25,6 +29,8 @@ const {
   center = true,
   position = "right",
   modalId,
+  imageWidth = 512,
+  imageHeight = 512,
 } = Astro.props;
 
 const positionClasses = {
@@ -45,7 +51,15 @@ const positionClasses = {
   >
     {
       image && !overlay && (
-        <img src={image} class="max-w-sm rounded-2xl shadow-2xl" alt={title} />
+        <Image
+          src={image}
+          alt={title}
+          width={imageWidth}
+          height={imageHeight}
+          class="max-w-sm rounded-2xl shadow-2xl"
+          loading="eager"
+          format="webp"
+        />
       )
     }
 

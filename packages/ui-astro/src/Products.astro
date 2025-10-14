@@ -77,17 +77,19 @@ const themeClasses = {
           <div
             class="group card bg-base-100 border border-base-200 shadow-xl transition-all duration-200 hover:shadow-2xl hover:border-primary/60 hover:-translate-y-1 cursor-pointer no-underline"
           >
-            <figure class="px-4 pt-4">
-              <Image
-                src={oracle.image}
-                alt={oracle.title}
-                width={imageWidth}
-                height={imageHeight}
-                class="rounded-xl h-84 w-full object-cover object-top mx-auto"
-                loading="lazy"
-                format="webp"
-              />
-            </figure>
+            {oracle.image && (
+              <figure class="px-4 pt-4">
+                <Image
+                  src={oracle.image}
+                  alt={oracle.title}
+                  width={imageWidth}
+                  height={imageHeight}
+                  class="rounded-xl h-84 w-full object-cover object-top mx-auto"
+                  loading="lazy"
+                  format="webp"
+                />
+              </figure>
+            )}
             <div class="card-body items-center text-center">
               <h3 class="card-title text-3xl">{oracle.title}</h3>
               <p class="text-lg text-base-content/80">
@@ -171,17 +173,19 @@ const themeClasses = {
           <div
             class="group card bg-base-100 border border-base-200 shadow-xl transition-all duration-200 hover:shadow-2xl hover:border-secondary/60 hover:-translate-y-1 cursor-pointer no-underline"
           >
-            <figure class="px-4 pt-4">
-              <Image
-                src={pantheon.image}
-                alt={pantheon.title}
-                width={imageWidth}
-                height={imageHeight}
-                class="rounded-xl h-84 w-full object-cover object-top mx-auto"
-                loading="lazy"
-                format="webp"
-              />
-            </figure>
+            {pantheon.image && (
+              <figure class="px-4 pt-4">
+                <Image
+                  src={pantheon.image}
+                  alt={pantheon.title}
+                  width={imageWidth}
+                  height={imageHeight}
+                  class="rounded-xl h-84 w-full object-cover object-top mx-auto"
+                  loading="lazy"
+                  format="webp"
+                />
+              </figure>
+            )}
             <div class="card-body items-center text-center">
               <h3 class="card-title text-3xl">{pantheon.title}</h3>
               <p class="text-lg text-base-content/80">

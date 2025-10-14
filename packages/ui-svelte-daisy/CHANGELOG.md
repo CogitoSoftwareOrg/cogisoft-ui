@@ -1,5 +1,11 @@
 # @cogisoft/ui-svelte-daisy
 
+## 0.1.12
+
+### Patch Changes
+
+- d5b5674: blank Button mode
+
 ## 0.1.11
 
 ### Patch Changes

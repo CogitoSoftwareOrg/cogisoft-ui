@@ -43,7 +43,7 @@
 		circle = false,
 		wide = false,
 		class: className = '',
-		target = '_self'
+		target
 	}: Props = $props();
 
 	const colorClasses = {

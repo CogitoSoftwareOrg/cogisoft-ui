@@ -1,5 +1,11 @@
 # @cogisoft/ui-astro
 
+## 0.1.13
+
+### Patch Changes
+
+- da12829: Updated, now bearable
+
 ## 0.1.12
 
 ### Patch Changes
